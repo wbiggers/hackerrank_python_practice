@@ -33,4 +33,4 @@ for item in cl:
     if 'a' in item:
         count += 1
 
-print('{0:.3f}'.format(count/len(cl)))
+print('{0:.3f}'.format(count / len(cl)))

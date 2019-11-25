@@ -27,10 +27,10 @@ N = int(input())
 l = list(input().split())
 K = int(input())
 
-cl = combinations(l, K)
-print(cl)
+count = 0
+cl = list(combinations(l, K))
 for item in cl:
-    if a in item:
+    if 'a' in item:
         count += 1
 
-print(count/len(cl):.3f)
+print('{0:.3f}'.format(count/len(cl)))

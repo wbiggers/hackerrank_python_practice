@@ -33,4 +33,4 @@ for item in cl:
     if a in item:
         count += 1
 
-print(count/len(cl):.3f)
+print(count/len(cl): .3f)

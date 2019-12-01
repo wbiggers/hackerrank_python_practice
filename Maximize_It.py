@@ -18,8 +18,10 @@ Output Format
 Output a single integer denoting the value Smax.
 """
 
-# Not knowing any math trick using modulo (no distributive property, etc.), use brute force methods.
 # Logic - use itertools combinations to create all possible subsets. Calculate S for each.  Print max S.
+# Modulo does have a distributive property, though it does not eliminate the need to consolidate the entire numerator
+# and apply the denominator in a final modulo operation.  Therefore, we will apply the f(x) operation upon input()
+# but not the distributive modulo as it adds an additional operation rather than simplify the process.
 
 # Handle the input:
 K, M = map(int, input().split())

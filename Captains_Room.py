@@ -14,4 +14,28 @@ The number that is only listed once in the list.
 
 K = int(input())
 numbers = list(map(int, input().split()))
+# unique = set(numbers)
 
+
+# This code works, but takes too long.  HackerRank has a time limit on execution.
+"""
+room = None
+for number in unique:
+    if numbers.count(number) == 1:
+        room = number
+        break
+
+print(room)
+"""
+
+summary = {}
+for item in numbers:
+    if item in summary:
+        summary[item] += 1
+    else:
+        summary[item] = 1
+
+rooms = list(summary.keys())
+people = list(summary.values())
+
+print(rooms[people.index(1)])
